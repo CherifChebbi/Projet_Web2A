@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TheEvent - Bootstrap Event Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/sstyle.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">Reclamations</a></li>
+          <li><a href="#speakers">Add</a></li>
+          <li><a href="#1">Update</a></li>
+          <li><a href="#2">Delete</a></li>
+        
+          <li><a href="#gallery">Reponse</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">Welcome To The <br><span>Reclamations</span> Space</h1>
+     
+      <a href="#about" class="about-btn scrollto">About Reclamations</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Reclamations</h2>
+            <h3>Les réclamations sont des demandes formulées par des clients ou des consommateurs qui expriment leur insatisfaction quant à un produit ou un service. Les réclamations peuvent porter sur différents aspects, tels que la qualité du produit, la rapidité de livraison, le traitement de la commande, le service après-vente, ou encore la politesse et la compétence du personnel en contact avec le client. Les entreprises sont souvent tenues de traiter les réclamations avec sérieux et diligence, dans le but de satisfaire les clients et de préserver leur réputation. Les réclamations peuvent être traitées directement par les entreprises ou par le biais de médiateurs externes, tels que les associations de consommateurs ou les tribunaux de commerce. Une bonne gestion des réclamations peut permettre aux entreprises de fidéliser leur clientèle et d'améliorer leur image de marque.</h3>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Add A New Reclamation</h2>          
+        </div>
+    
+        <form  action="connection.php" method="POST" >
+          <table style="margin: auto; border-spacing: 20px;">
+            <tr>
+              <td style="padding: 20px; width: 10%; text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R.png" alt="Speaker 1" class="img-fluid" style="width: 120px;">
+                  <div class="details">
+                    <h3>ID</h3>
+                    <div class="social">
+                      <input type="text" id="ID" name="ID" required>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R2.png" alt="Speaker 2" class="img-fluid" style="width: 35%;">
+                  <div class="details">
+                    <h3>DATE</h3>
+                    <div class="social">
+                      <input class="form" type="date" id="DATEE" name="DATEE" value="2023-04-24" min="2017-01-01" max="2023-04-24" required>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R3.png" alt="Speaker 3" class="img-fluid" style="width: 33%;">
+                  <div class="details">
+                    <h3>SUBJECT</h3>
+                    <div class="social">
+                      <input type="text" id="SUBJECTT" name="SUBJECTT" pattern="[^\d]+" required>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R44.png" alt="Speaker 4" class="img-fluid" style="width: 50%;">
+                  <div class="details">
+                    <h3>MESSAGE</h3>
+                    <div class="social">
+                      <textarea id="MESSAGEE" name="MESSAGEE" rows="5" required></textarea>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R44.png" alt="Speaker 4" class="img-fluid" style="width: 50%;">
+                  <div class="details">
+                    <h3>EMAIL</h3>
+                    <div class="social">
+                      <textarea id="EMAIL" name="EMAIL" rows="5" required></textarea>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          
+          
+
+
+          <div id="container">
+        
+            <input id="ajj" class="btn btn-danger" type="submit" value="Add" name="button">
+          </div>      <style>
+    
+            #ajj{
+             border-radius:15%;
+             
+            }
+            #container {
+      text-align: center;
+    }
+            #ajj:hover
+            {
+              opacity: 50%;
+            }
+          </style>
+    
+          <form name="myForm" action="" method="POST" onsubmit="return validataeForm()"></form>
+    
+    
+        </section>
+    
+    
+
+    <!--==========================
+      speakers  Section 2
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="1">Update Your Reclamation </h2>          
+        </div>
+
+        <form  action="update.php" method="POST" >
+          <table style="margin: auto; border-spacing: 20px;">
+            <tr>
+              <td style="padding: 20px; width: 10%; text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R.png" alt="Speaker 1" class="img-fluid" style="width: 120px;">
+                  <div class="details">
+                    <h3>ID</h3>
+                    <div class="social">
+                      <input type="text" id="ID" name="ID" required>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R2.png" alt="Speaker 2" class="img-fluid" style="width: 35%;">
+                  <div class="details">
+                    <h3>DATE</h3>
+                    <div class="social">
+                      <input class="form" type="date" id="DATEE" name="DATEE" value="2023-04-24" min="2017-01-01" max="2023-04-24" required>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R3.png" alt="Speaker 3" class="img-fluid" style="width: 33%;">
+                  <div class="details">
+                    <h3>SUBJECT</h3>
+                    <div class="social">
+                      <input type="text" id="SUBJECTT" name="SUBJECTT" pattern="[^\d]+" required>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R44.png" alt="Speaker 4" class="img-fluid" style="width: 50%;">
+                  <div class="details">
+                    <h3>MESSAGE</h3>
+                    <div class="social">
+                      <textarea id="MESSAGEE" name="MESSAGEE" rows="5" required></textarea>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td style="padding: 20px; width: 10%;text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R44.png" alt="Speaker 4" class="img-fluid" style="width: 50%;">
+                  <div class="details">
+                    <h3>EMAIL</h3>
+                    <div class="social">
+                      <textarea id="EMAIL" name="EMAIL" rows="5" required></textarea>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          
+          
+
+
+          
+          <div style="text-align: center;">
+            <input id="upd" type="submit" value="UPDATE" >
+        </div>
+          <form name="myForm" action="" method="POST" onsubmit="return validateForm()">
+<style>
+  #upd:hover
+  {
+    background: #f82249;
+  color: #fff;
+  }
+  #upd {font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f82249;}
+</style>
+
+       
+          </form>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="2">Delete Your Reclamation </h2>          
+        </div>
+
+        <form  action="delete.php" method="POST" >
+          <table style="margin: auto; border-spacing: 20px;">
+            <tr>
+              <td style="padding: 20px; width: 25%; text-align: center;">
+                <div class="speaker">
+                  <img src="img/speakers/R.png" alt="Speaker 1" class="img-fluid" style="width: 120px;">
+                  <div class="details">
+                    <h3>ID</h3>
+                    <div class="social">
+                      <input type="text" id="ID" name="ID" required>
+                    </div>
+                  </div>
+                </div>
+              </td>
+             
+            </tr>
+          </table>
+          
+          
+
+
+          
+    
+          <div style="text-align: center;">
+            <input id="del" type="submit" value="DELETE" >
+        </div>
+        <style>
+          #del {font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 12px 32px;
+      border-radius: 50px;
+      transition: 0.5s;
+      line-height: 1;
+      margin: 10px;
+      color: #0f1246;
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+      border: 2px solid #d8ccce;}
+        
+        
+    #del:hover {
+      background: #f82249;
+      color: #e6d0d4;
+    }
+    
+    
+    </style>
+        </form>
+
+
+       
+
+      </div>
+
+    </section>
+
+   
+    <!--=========================================================================================================
+     Galery section
+    ============================================================================================================-->
+    <section id="gallery" class="wow fadeInUp">
+      <div class="section-header">
+        <h2 >Get Your QR Code</h2>          
+      </div>
+
+      <div style="text-align: center;">
+        <div class="share"><a href="select.php">Access to Your reponse</a></div>
+    </div>
+    <style>
+      #del {font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #0f1246;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #d8ccce;}
+    
+    
+#del:hover {
+  background: #f82249;
+  color: #e6d0d4;
+}
+
+
+</style>
+
+    </section>
+
+    
+  </main>
+
+
+ <!--==========================
+      Subscribe Section
+    ============================-->
+    <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>......</h2>
+          <p></p>
+        </div>
+
+        
+
+      </div>
+    </section>
+
+   
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+             <hr>
+             Esprit Ariana<br>
+              Tunis <br>
+              <strong>Phone:</strong>  +216 91 785 258<br>
+              <strong>Email:</strong>  Culture_Vibes@gmail.com <br>
+            </p>
+
+            <div class="social-links">
+              
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

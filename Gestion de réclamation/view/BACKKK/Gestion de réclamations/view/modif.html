@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: rgb(183, 211, 185)">
+	<div class="container">
+		<div class="form">
+			<h2>Update your reclamation</h2>
+			<form action="update.php" method="post"">
+				<label for="ID">ID</label>
+				<input type="text" id="ID" name="ID" required>
+
+				<label for="SUBJECTT">DATEE:</label>
+				<input type="text" id="DATEE" name="DATEE"  required>
+
+				<label for="SUBJECTT">SUBJECTT:</label>
+				<input type="text" id="SUBJECTT" name="SUBJECTT" pattern="[^\d]+" required>
+
+				<label for="MESSAGEE">MESSAGEE:</label>
+				<textarea id="MESSAGEE" name="MESSAGEE" rows="5" required></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<?php
+	
+	?>
+</body>
+</html>

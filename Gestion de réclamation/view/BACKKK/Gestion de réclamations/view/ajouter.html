@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+	border: 15px ;
+	border-color: rgb(10, 10, 60);
+	
+}</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: rgb(183, 211, 185);">
+	
+		
+		<div class="form1">
+			<h2>Add a New reclamation</h2>
+			<form action="connection.php" method="post"">
+				<label for="ID">ID</label>
+				<input type="text" id="ID" name="ID" required>
+                <span id="erreur"></span>
+				
+
+				<label for="DATEE">DATE:</label>
+				<input class="form" type="date" id="DATEE" name="DATEE" value="2023-04-24" min="2017-01-01" max="2023-04-24" required>
+
+				<label for="SUBJECTT">SUBJECTT:</label>
+				<input type="text" id="SUBJECTT" name="SUBJECTT" pattern="[^\d]+" required>
+
+				<label for="MESSAGEE">MESSAGEE:</label>
+				<textarea id="MESSAGEE" name="MESSAGEE" rows="5" required></textarea>
+				
+
+				<input type="submit" value="Submit" name='button'>
+				<form name="myForm" action="" method="POST" onsubmit="return validateForm()">
+
+			</form>
+			
+		</div>
+		<script src="script.js"></script>
+
+	
+	
+</body>
+</html>
+
+

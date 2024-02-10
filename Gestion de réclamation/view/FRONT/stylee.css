@@ -1,0 +1,47 @@
+.wrapper {
+    margin: 20px auto;
+    width: 500px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #2e89ce;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content {
+    margin: 20px auto;
+    width: 500px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
