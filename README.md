@@ -1,4 +1,4 @@
-Culture Vibes est une plateforme en ligne dynamique élaborée lors de notre projet académique de deuxième année. Elle a été méticuleusement conçue en utilisant PHP, HTML, CSS et une base de données MySQL, hébergée sur Apache. Ce site web captivant agit comme un carrefour pour célébrer les multiples expressions culturelles à travers le monde.
+Culture Vibes est une application web élaborée lors de notre projet académique de deuxième année. Elle a été méticuleusement conçue en utilisant PHP, HTML, CSS et une base de données MySQL, hébergée sur Apache. Ce site web captivant agit comme un carrefour pour célébrer les multiples expressions culturelles à travers le monde.
 
 Adoptant l'éthique de la diversité et de l'inclusion, Culture Vibes offre une expérience immersive où les visiteurs peuvent plonger dans divers aspects culturels tels que l'art, la musique, la cuisine, la mode, et bien plus encore. Notre mission est de favoriser les connexions et la compréhension entre les communautés en facilitant l'échange de connaissances culturelles et d'appréciation.
 
